@@ -1,9 +1,4 @@
 
-
-
-
-
-
 body {
   font-family: 'Raleway', sans-serif;
   color: #0c0c0c;
@@ -228,7 +223,7 @@ a:focus {
 }
 
 .navbar-brand img {
-  width: 40px;
+  max-width: auto;
   margin-right: 5px;
 }
 
