@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Blue Grape Web Designs</title>
+  <title>Etusivu - blue grape</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
@@ -78,8 +78,8 @@
                 sovellukset
               </h1>
               <div>
-                <a href="">
-                  TÄHÄN JOTAIN
+                <a href="palvelut.html">
+                  Palvelut
                 </a>
               </div>
             </div>
@@ -148,11 +148,11 @@
   </div>
 
   <!-- feature section -->
-  <section class="feature_section layout_padding2 layout_margin">
+  <section class="feature_section layout_padding2 layout_margin" id="palvelut">
     <div class="container">
       <div class="heading_container">
         <h2>
-          Monipuoliset tarjonnat räätälöity <br />
+          Monipuoliset web palvelut <br />
           eri tarpeisiin
         </h2>
       </div>
@@ -421,7 +421,7 @@
   <!-- end download section -->
 
   <!-- about section -->  <!-- background kuva style.css => .about-section -->
-  <section class="about_section layout_padding">
+  <section class="about_section layout_padding" id="meista">
     <div class="container">
       <div class="heading_container d-flex justify-content-lg-start">
         <h2 id="about_h2">
@@ -524,34 +524,41 @@
   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! TÄHÄN PÄÄTTYY SUBSCRIBE JA REVIEWS SECTIONIN PIILOTUS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
   <!-- contact section -->
-  <section class="contact_section layout_padding">
+  <section class="contact_section layout_padding" id="otayhteytta">
     <div class="container">
       <div class="d-flex ">
         <h2>
-          Contact Us
+          Ota yhteyttä
         </h2>
       </div>
       <div class="row">
         <div class="col-md-6">
 
-          <form action="">
+          <!-- https://www.youtube.com/watch?v=r4RQ38EoLds -->
+
+          <form action="https://formsubmit.co/emil.hellgrenn@gmail.com" method="POST">
+            <!-- Lähettää käyttäjän submitin jälkeen thank you sivulle-->
+            <input type="hidden" name="_next" value="https://bluegrape.fi/thankyou.html">
+            <!-- Sähköpostien otsikko FormSubmit.co:lta -->
+            <input type="hidden" name="_subject" value="Uusi yhteydenotto">
+
             <div class="contact_form-container">
               <div>
                 <div>
-                  <input type="text" placeholder="Name">
+                  <input type="text" id="nimi" name="nimi" placeholder="Nimi">
                 </div>
                 <div>
-                  <input type="text" placeholder="Phone Number">
+                  <input type="text" id="numero" name="numero" placeholder="Puhelinnumero">
                 </div>
                 <div>
-                  <input type="email" placeholder="Email">
+                  <input type="email" id="email" name="email" placeholder="Sähköposti" required>
                 </div>
                 <div class="mt-5">
-                  <input type="text" placeholder="Message">
+                  <input type="text" id="viesti" name="viesti" placeholder="Viesti" required>
                 </div>
                 <div class="mt-5">
                   <button type="submit">
-                    send
+                    lähetä
                   </button>
                 </div>
               </div>
@@ -559,6 +566,7 @@
             </div>
 
           </form>
+
         </div>
         <div class="col-md-6">
           <div class="contact_img-box">
