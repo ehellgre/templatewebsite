@@ -1,4 +1,7 @@
-.btn-2:hover
+.btn-1
+.about_section #täällä_meistä_bg_kuva
+h2
+.contact_section
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -538,10 +541,15 @@ a:focus {
 }
 
 .about_section {
-  background-image: url(../images/about-bg.jpg);
-  background-size: cover;
+  background-image: url(../images/about-background.png);
+  /*background-size: cover;*/
   background-position: center;
   background-attachment: fixed;
+  color: #ffffff;
+}
+
+#about_h2 {
+  color: #ffffff;
 }
 
 .about_section .row {
@@ -573,15 +581,15 @@ a:focus {
 .about_section .detail-box.b-1 a {
   display: inline-block;
   padding: 10px 40px;
-  background-color: #8c60bd;
-  color: #fefdfc;
-  border-radius: 0;
-  border: 1px solid #8c60bd;
+  background-color: #99ccff;
+  color: #ffffff;
+  border-radius: 0px;
+  border: 1px solid #99ccff;
 }
 
 .about_section .detail-box.b-1 a:hover {
   background-color: transparent;
-  color: #8c60bd;
+  color: #99ccff;
 }
 
 .subscribe_section {
@@ -718,7 +726,7 @@ a:focus {
 
 .contact_form-container button {
   border: none;
-  background-color: #8c60bd;
+  background-color: #99CCFF;
   color: #fff;
   font-size: 15px;
   padding: 15px 45px;
@@ -904,7 +912,7 @@ a:focus {
 /* icon top */
 
 .icons-top {
-  display: flex !important; 
+  display: flex; 
   column-gap: 25px;
   margin-top: 40px;
 }
